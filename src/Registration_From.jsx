@@ -142,35 +142,109 @@ const Registration_From = ({ onSubmit }) => {
         >
           Skills
         </label>
-        <div className="flex gap-2 justify-center items-center w-150 mx-auto ">
-          <label
-            htmlFor="HTML"
-            className="text-gray-800 font-bold text-xl mb-1"
-          >
-            HTML
-          </label>
-          <input
-            type="checkbox"
-            id="HTML"
-            name="skills"
-            className="w-150 py-1"
-            value="HTML"
-            checked={formData.skills.includes("HTML")}
-            onChange={handleChange}
-          />
-          <label htmlFor="CSS" className="text-gray-800 font-bold text-xl mb-1">
-            CSS
-          </label>
-          <input
-            type="checkbox"
-            id="CSS"
-            name="skills"
-            className="w-150 py-1"
-            value="CSS"
-            checked={formData.skills.includes("CSS")}
-            onChange={handleChange}
-          />
-          <br />
+        <div className="flex flex-col gap-3 w-150">
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="HTML"
+              name="skills"
+              className="w-5 h-5 cursor-pointer"
+              value="HTML"
+              checked={formData.skills.includes("HTML")}
+              onChange={handleChange}
+            />
+            <label
+              htmlFor="HTML"
+              className="text-gray-800 font-semibold text-lg cursor-pointer"
+            >
+              HTML
+            </label>
+          </div>
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="CSS"
+              name="skills"
+              className="w-5 h-5 cursor-pointer"
+              value="CSS"
+              checked={formData.skills.includes("CSS")}
+              onChange={handleChange}
+            />
+            <label
+              htmlFor="CSS"
+              className="text-gray-800 font-semibold text-lg cursor-pointer"
+            >
+              CSS
+            </label>
+          </div>
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="JavaScript"
+              name="skills"
+              className="w-5 h-5 cursor-pointer"
+              value="JavaScript"
+              checked={formData.skills.includes("JavaScript")}
+              onChange={handleChange}
+            />
+            <label
+              htmlFor="JavaScript"
+              className="text-gray-800 font-semibold text-lg cursor-pointer"
+            >
+              JavaScript
+            </label>
+          </div>
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="React"
+              name="skills"
+              className="w-5 h-5 cursor-pointer"
+              value="React"
+              checked={formData.skills.includes("React")}
+              onChange={handleChange}
+            />
+            <label
+              htmlFor="React"
+              className="text-gray-800 font-semibold text-lg cursor-pointer"
+            >
+              React
+            </label>
+          </div>
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="Angular"
+              name="skills"
+              className="w-5 h-5 cursor-pointer"
+              value="Angular"
+              checked={formData.skills.includes("Angular")}
+              onChange={handleChange}
+            />
+            <label
+              htmlFor="Angular"
+              className="text-gray-800 font-semibold text-lg cursor-pointer"
+            >
+              Angular
+            </label>
+          </div>
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="Node"
+              name="skills"
+              className="w-5 h-5 cursor-pointer"
+              value="Node"
+              checked={formData.skills.includes("Node")}
+              onChange={handleChange}
+            />
+            <label
+              htmlFor="Node"
+              className="text-gray-800 font-semibold text-lg cursor-pointer"
+            >
+              Node
+            </label>
+          </div>
         </div>
 
         <button
